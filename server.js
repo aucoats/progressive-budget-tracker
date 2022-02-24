@@ -15,10 +15,9 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 app.use(express.static("public"));
-app.set("port", PORT);
 
 mongoose.connect(MONGODB_URI, {
-  useNewUrlParser: true,
+  // useNewUrlParser: true,
   useFindAndModify: false
 });
 
